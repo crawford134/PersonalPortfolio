@@ -14,7 +14,7 @@ export default function Header() {
             <Tabs sx={{ml : 'auto'}} className='HeaderTabGroup' textColor='inherit' value={value} onChange={(e,value)=>setValue(value)}>
                 <Tab LinkComponent={NavLink} to="/" label="Home"/>
                 <Tab LinkComponent={NavLink} to="/about" label='About Me' value={1}/>
-                <Tab LinkComponent={NavLink} to="/portfolio" label='Portfolio' value={2}/>
+                <Tab LinkComponent={NavLink} to="/projects" label='Portfolio' value={2}/>
                 <Tab LinkComponent={NavLink} to="/resume" label='Resume' value={3} />
             </Tabs>
         </Toolbar>
