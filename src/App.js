@@ -16,6 +16,7 @@ function App() {
           <Route path="/about" element={<AboutMe />} exact/>
           <Route path="/projects" element={<Portfolio />} exact/>
           <Route path="/resume" element={<Resume />} exact/>
+          <Route path="/PersonalPortfolio" element={<Home />} />
         </Routes>
       </main>
     </React.Fragment>
