@@ -14,9 +14,7 @@ npm run deploy
 ### Frontend
 
 **Material UI**
-`npm install @mui/material @emotion/react @emotion/styled`
-
-`npm install @mui/icons-material`
+`npm install @mui/material @emotion/react @emotion/styled` and `npm install @mui/icons-material`
 
 **React Router Dom** `npm install --save react-router-dom`
 
