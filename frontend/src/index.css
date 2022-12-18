@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.HeaderTitle{
+  margin-left: 10px !important;
+  font-size: 20px !important;
+  font-weight: 300px !important;
+  color: #fff !important;
+}
+
+.HeaderTabGroup{
+  margin-left: 10px;
+}
+
+.Home-wrapper {
+  height: 100px;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+  
+.Home-typing {
+  width: 35ch; /* Change this number based on the number of characters you want to appear */
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
