@@ -11,12 +11,13 @@ npm run deploy
 ```
 
 ## Imports 
-### Frontend
 
-**Material UI**
+#### Frontend
+
+**Material UI:**
 `npm install @mui/material @emotion/react @emotion/styled` and `npm install @mui/icons-material`
 
-**React Router Dom** `npm install --save react-router-dom`
+**React Router Dom:** `npm install --save react-router-dom`
 
-**Github Pages** 
+**Github Pages:** 
 `npm install gh-pages --save-dev`
