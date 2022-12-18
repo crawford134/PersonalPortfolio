@@ -2,14 +2,12 @@
 
 ## To Start the Frontend
 ```
-cd frontend
 npm run start
 ```
 
-## To Start the Frontend
+## To Deploy
 ```
-cd frontend
-npm run start
+npm run deploy
 ```
 
 ## Imports 
