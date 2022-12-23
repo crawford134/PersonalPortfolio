@@ -7,15 +7,17 @@ export default function Header() {
     const [value,setValue] = useState();
 
     return (
-    <AppBar sx={{backgroundColor: '#232F3D'}} position='sticky'>
+    <AppBar className='navBar' position='sticky'>
         <Toolbar>
             <Face3Icon/>
             <Tab className='HeaderTitle' LinkComponent={NavLink} to="/" label='Kiley Carson' onClick={(e)=>setValue(0)}/>
             <Tabs sx={{ml : 'auto'}} className='HeaderTabGroup' textColor='inherit' value={value} onChange={(e,value)=>setValue(value)}>
                 <Tab LinkComponent={NavLink} to="/" label="Home"/>
                 <Tab LinkComponent={NavLink} to="/about" label='About Me' value={1}/>
-                <Tab LinkComponent={NavLink} to="/projects" label='Portfolio' value={2}/>
-                <Tab LinkComponent={NavLink} to="/resume" label='Resume' value={3} />
+                <Tab LinkComponent={NavLink} to="/resume" label='Resume' value={2} />
+                <Tab LinkComponent={NavLink} to="/skills" label='Skills' value={3}/>
+                <Tab LinkComponent={NavLink} to="/portfolio" label='Portfolio' value={4}/>
+                <Tab LinkComponent={NavLink} to="/contact" label='Contact' value={5}/>
             </Tabs>
         </Toolbar>
     </AppBar>
