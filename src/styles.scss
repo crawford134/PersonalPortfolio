@@ -84,6 +84,9 @@
 }
 @media screen and (max-width:572px){
   .contactme-buttons{
+    button, a{
+      font-size: 1.5rem !important;
+    }
     button{
       padding: 10px 15px !important;
     }
@@ -94,7 +97,7 @@
 }
 @media screen and (max-width: 376px) {
     .home-text h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         line-height: 4rem;
     }
 }
@@ -201,7 +204,6 @@
     background-color: transparent;
   } 
 }
-
 @media only screen and (max-width: 690px) {
   .navbar-container-menu {
     display: flex;
@@ -234,7 +236,20 @@
     color: var(--selected-theme-main-color-dark);
   }
 }
-
 .active {
   background: var(selected-theme-header-background-color);
+}
+
+/*---------------------------- Light/Dark Mode Component ----------------------------*/
+
+.mode-container{
+  position: fixed;
+  z-index: 21;
+  &-icon{
+
+    svg{
+      height: 40px !important;
+      width: 40px !important;
+    }
+  }
 }

@@ -1,28 +1,67 @@
 export const options = {
+    "background": {
+        "image": "",
+        "position": "50% 50%",
+        "repeat": "no-repeat",
+        "size": "cover"
+    },
     "fullScreen": {
         "enable": true,
         "zIndex": 1
     },
     "particles": {
         "number": {
-            "value": 80
+            "value": 150,
+            "density": {
+                "enable": true
+            }
         },
         "color": {
             "value": "#ffffff"
+        },
+        "shadow": {
+            "enable": true,
+            "color": "#000000",
+            "blur": 5,
+            "offset": {
+                "x": 3,
+                "y": 3
+            }
         },
         "shape": {
             "type": "circle"
         },
         "opacity": {
-            "value": { "min": 0.1, "max": 0.5 },
-            "animation": {
-                "enable": true,
-                "speed": 3,
+            "value": 0.5,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
                 "sync": false
             }
         },
         "size": {
-            "value": { "min": 1, "max": 50 }
+            "value": 5,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1,
+            "shadow": {
+                "enable": true,
+                "blur": 5,
+                "color": "#000000"
+            }
         },
         "move": {
             "enable": true,
@@ -30,41 +69,56 @@ export const options = {
             "direction": "none",
             "random": false,
             "straight": false,
-            "outModes": "out"
+            "out_mode": "out",
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
         }
     },
     "interactivity": {
         "events": {
-            "onHover": {
+            "onhover": {
                 "enable": true,
-                "mode": "repulse"
+                "mode": "repulse",
+                "parallax": {
+                    "enable": false,
+                    "force": 60,
+                    "smooth": 10
+                }
             },
-            "onClick": {
+            "onclick": {
                 "enable": true,
                 "mode": "push"
             },
             "resize": true
         },
         "modes": {
+            "grab": {
+                "distance": 400,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 0.8,
+                "speed": 3
+            },
             "repulse": {
                 "distance": 200
             },
             "push": {
-                "quantity": 4
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
             }
         }
     },
-    "absorbers": {
-        "size": {
-            "value": { "min": 5, "max": 10 },
-            "limit": 100
-        },
-        "position": {
-            "x": 50,
-            "y": 50
-        }
-    },
-    "background": {
-        "color": "#0d47a1"
-    }
+    "fpsLimit": 120,
+    "retina_detect": true
 }

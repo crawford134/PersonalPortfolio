@@ -7,9 +7,10 @@ import Resume from "./Pages/Resume";
 import Skills from "./Pages/Skills"
 import Portfolio from "./Pages/Portfolio";
 import Contact from "./Pages/Contact";
+import Mode from "./Components/Mode";
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
-import { options } from "./Helpers/ParticlesConfig";
+import { options } from "./Helpers/ParticlesConfig1";
 
 function App() {
   const particlesInit = async (main) =>{
@@ -26,6 +27,7 @@ function App() {
       }
       <header className="app-header"><Header /></header>
       <main className="app-main">
+        <Mode/>
         <Routes>
           <Route path="/" index element={<Home />} />
           <Route path="/about" element={<AboutMe />} exact/>
