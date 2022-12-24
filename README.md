@@ -30,10 +30,8 @@ npm run deploy
 **React Animation:** 
 `npm install react-simple-animate`
 
-**Material UI:**
-`npm install @mui/material @emotion/react @emotion/styled` and `npm install @mui/icons-material`
-or react icons
-`npm install react-icons`
+**Material UI Icons:**
+`npm install @mui/icons-material` or react icons `npm install react-icons`
 
 **Github Pages:** 
 `npm install gh-pages --save-dev`

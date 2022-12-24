@@ -7,9 +7,10 @@ import Resume from "./Pages/Resume";
 import Skills from "./Pages/Skills"
 import Portfolio from "./Pages/Portfolio";
 import Contact from "./Pages/Contact";
+import Mode from "./Components/Mode";
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
-import { options } from "./Helpers/ParticlesConfig";
+import { options } from "./Helpers/ParticlesConfig1";
 
 function App() {
   const particlesInit = async (main) =>{
@@ -18,13 +19,15 @@ function App() {
   const location = useLocation();
 
   return (
-    <React.Fragment>
+    <div className="app">
+      <React.Fragment>
       {
         location.pathname==="/" ?  <Particles id="tsparticles" init={particlesInit} options = {options}  />
         : ""
       }
-      <header><Header /></header>
-      <main className="MainBody">
+      <header className="app-header"><Header /></header>
+      <main className="app-main">
+        <Mode/>
         <Routes>
           <Route path="/" index element={<Home />} />
           <Route path="/about" element={<AboutMe />} exact/>
@@ -35,6 +38,7 @@ function App() {
         </Routes>
       </main>
     </React.Fragment>
+    </div>
   );
 }
 
