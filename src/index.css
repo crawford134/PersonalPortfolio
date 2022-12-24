@@ -1,54 +1,44 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Serif:opsz,wght@8..144,500&display=swap');
+
+:root{
+  --selected-theme-background-color: var(--dark-theme-background-color);
+  --selected-theme-main-color-dark: var(--dark-theme-main-color-dark);
+  --selected-theme-main-color-normal: var(--dark-theme-main-color-normal);
+  --selected-theme-main-color-light: var(--dark-theme-main-color-light);
+  --selected-theme-sub-text-color: var(--dark-theme-sub-text-color);
+  --selected-theme-header-background-color: var(--dark-theme-header-background-color);
+  --selected-theme-header-border-color: var(--dark-theme-header-border-color);
+
+  /* Dark Theme Colors */
+  --dark-theme-background-color: #1d1d1d;
+  --dark-theme-main-color-dark: #0288d1;
+  --dark-theme-main-color-normal: #03a9f4;
+  --dark-theme-main-color-light: #4fc3f7; 
+  --dark-theme-sub-text-color: #fff;
+  --dark-theme-header-background-color: #181818;
+  --dark-theme-header-border-color: #282828;
+
+  --font-base: "Roboto Slab", serif
+}
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  font-size: 62.5%;
+  height: 100%;
 }
 
-
-.HeaderTitle{
-  margin-left: 10px !important;
-  font-size: 20px !important;
-  font-weight: 300px !important;
-  color: #fff !important;
+body{
+  background: var(--selected-theme-background-color);
+  height: 100%;
 }
 
-.HeaderTabGroup{
-  margin-left: 10px;
-}
-
-.Home-wrapper {
-  height: 100px;
-  /*This part is important for centering*/
-  display: grid;
-  place-items: center;
-}
-  
-.Home-typing {
-  width: 35ch; /* Change this number based on the number of characters you want to appear */
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
+#root{
+  height: 100%;
 }
