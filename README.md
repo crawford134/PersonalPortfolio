@@ -37,3 +37,12 @@ or react icons
 
 **Github Pages:** 
 `npm install gh-pages --save-dev`
+
+## Particles Set Up 
+
+In the Helpers you can find 2 different config files with json objects that can be used for the Home Page Background.
+To change the config file being used go to the App.js file 
+If you want to use a particles demo that is not found here, go to 
+`https://github.com/matteobruni/tsparticles/tree/main/websites/particles.js.org/presets`
+To see the demos go to 
+`https://particles.js.org/samples/index.html#absorbers`
