@@ -7,6 +7,7 @@
   --selected-theme-main-color-light: var(--dark-theme-main-color-light);
   --selected-theme-sub-text-color: var(--dark-theme-sub-text-color);
   --selected-theme-header-background-color: var(--dark-theme-header-background-color);
+  --selected-theme-header-border-color: var(--dark-theme-header-border-color);
 
   /* Dark Theme Colors */
   --dark-theme-background-color: #1d1d1d;
@@ -15,11 +16,13 @@
   --dark-theme-main-color-light: #4fc3f7; 
   --dark-theme-sub-text-color: #fff;
   --dark-theme-header-background-color: #181818;
+  --dark-theme-header-border-color: #282828;
 
   --font-base: "Roboto Slab", serif
 }
 
 *{
+  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;

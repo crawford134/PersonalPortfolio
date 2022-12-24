@@ -1,25 +1,38 @@
-import { React, useState } from 'react';
-import { AppBar, Toolbar, Tabs, Tab } from '@mui/material';
-import Face3Icon from '@mui/icons-material/Face3';
-import { NavLink } from 'react-router-dom';
+import { React, useState } from "react";
+import Face3Icon from "@mui/icons-material/Face3";
+import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from "react-router-dom";
+import "../styles.scss"
 
 export default function Header() {
-    const [value,setValue] = useState();
-
-    return (
-    <AppBar className='navBar' position='sticky'>
-        <Toolbar>
-            <Face3Icon/>
-            <Tab className='HeaderTitle' LinkComponent={NavLink} to="/" label='Kiley Carson' onClick={(e)=>setValue(0)}/>
-            <Tabs sx={{ml : 'auto'}} className='HeaderTabGroup' textColor='inherit' value={value} onChange={(e,value)=>setValue(value)}>
-                <Tab LinkComponent={NavLink} to="/" label="Home"/>
-                <Tab LinkComponent={NavLink} to="/about" label='About Me' value={1}/>
-                <Tab LinkComponent={NavLink} to="/resume" label='Resume' value={2} />
-                <Tab LinkComponent={NavLink} to="/skills" label='Skills' value={3}/>
-                <Tab LinkComponent={NavLink} to="/portfolio" label='Portfolio' value={4}/>
-                <Tab LinkComponent={NavLink} to="/contact" label='Contact' value={5}/>
-            </Tabs>
-        </Toolbar>
-    </AppBar>
-    )
+  const [click, setClick] = useState(false);
+  const handleClick = () => {
+    setClick(!click)
+  }
+  
+  return (
+    <div>
+      <nav className="navbar">
+        <div className="navbar-container">
+            <Link to={"/"} className="navbar-container-logo">
+                <Face3Icon className="navbar-icon"/>
+            </Link>
+            <ul className={click ? "navbar-container-menu active" : "navbar-container-menu"}>
+                <li className="navbar-container-menu-item"><Link to={"/"} className='navbar-container-menu-item-link'>HOME</Link></li> 
+                <li className="navbar-container-menu-item"><Link to={"/about"} className='navbar-container-menu-item-link'>ABOUT ME</Link></li> 
+                <li className="navbar-container-menu-item"><Link to={"/resume"} className='navbar-container-menu-item-link'>RESUME</Link></li> 
+                <li className="navbar-container-menu-item"><Link to={"/skills"} className='navbar-container-menu-item-link'>SKILLS</Link></li> 
+                <li className="navbar-container-menu-item"><Link to={"/portfolio"} className='navbar-container-menu-item-link'>PORTFOLIO</Link></li> 
+                <li className="navbar-container-menu-item"><Link to={"/contact"} className='navbar-container-menu-item-link'>CONTACT</Link></li> 
+            </ul>
+            <div className="navbar-container-icon" onClick={handleClick}>
+            { 
+                click ? <CloseIcon className="navbar-icon"/> : <MenuIcon className="navbar-icon"/>
+            }
+            </div>
+        </div>
+      </nav>
+    </div>
+  );
 }

@@ -15,8 +15,8 @@ npm run deploy
 **React Router Dom:** 
 `npm install --save react-router-dom`
 
-**SCSS:** 
-`npm install scss`
+**SASS:** 
+`npm install sass`
 
 **React Vertical Timeline Component:** 
 `npm install react-vertical-timeline-component`
@@ -32,6 +32,8 @@ npm run deploy
 
 **Material UI:**
 `npm install @mui/material @emotion/react @emotion/styled` and `npm install @mui/icons-material`
+or react icons
+`npm install react-icons`
 
 **Github Pages:** 
 `npm install gh-pages --save-dev`
