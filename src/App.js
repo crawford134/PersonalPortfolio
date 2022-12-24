@@ -18,13 +18,14 @@ function App() {
   const location = useLocation();
 
   return (
-    <React.Fragment>
+    <div className="app">
+      <React.Fragment>
       {
         location.pathname==="/" ?  <Particles id="tsparticles" init={particlesInit} options = {options}  />
         : ""
       }
-      <header><Header /></header>
-      <main className="MainBody">
+      <header className="app-header"><Header /></header>
+      <main className="app-main">
         <Routes>
           <Route path="/" index element={<Home />} />
           <Route path="/about" element={<AboutMe />} exact/>
@@ -35,6 +36,7 @@ function App() {
         </Routes>
       </main>
     </React.Fragment>
+    </div>
   );
 }
 
