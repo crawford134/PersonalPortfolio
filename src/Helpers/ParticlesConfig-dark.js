@@ -96,7 +96,6 @@ export const options = {
     },
     "retina_detect": true,
     "background": {
-        "color": "#1d1d1d",
         "image": "",
         "position": "50% 50%",
         "repeat": "no-repeat",

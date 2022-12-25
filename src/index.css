@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 :root{
-  --selected-theme-background-color: var(--dark-theme-background-color);
-  --selected-theme-main-color-dark: var(--dark-theme-main-color-dark);
-  --selected-theme-main-color-normal: var(--dark-theme-main-color-normal);
-  --selected-theme-main-color-light: var(--dark-theme-main-color-light);
-  --selected-theme-sub-text-color: var(--dark-theme-sub-text-color);
-  --selected-theme-header-background-color: var(--dark-theme-header-background-color);
-  --selected-theme-header-border-color: var(--dark-theme-header-border-color);
+  --selected-theme-background-color: var(--light-theme-background-color);
+  --selected-theme-main-color-dark: var(--light-theme-main-color-dark);
+  --selected-theme-main-color-normal: var(--light-theme-main-color-normal);
+  --selected-theme-main-color-light: var(--light-theme-main-color-light);
+  --selected-theme-sub-text-color: var(--light-theme-sub-text-color);
+  --selected-theme-header-background-color: var(--light-theme-header-background-color);
+  --selected-theme-header-border-color: var(--light-theme-border-color);
 
   /* Dark Theme Colors */
   --dark-theme-background-color: #1d1d1d;
@@ -17,6 +17,15 @@
   --dark-theme-sub-text-color: #fff;
   --dark-theme-header-background-color: #181818;
   --dark-theme-header-border-color: #282828;
+
+  /* Light Theme Colors */
+  --light-theme-background-color: #eeeeee;
+  --light-theme-main-color-dark: #014469;
+  --light-theme-main-color-normal: #015f92;
+  --light-theme-main-color-light: #027abc; 
+  --light-theme-sub-text-color: #000;
+  --light-theme-header-background-color: #e2e2e2;
+  --light-theme-header-border-color: #b5b5b5;
 
   --font-base: "Roboto Slab", serif
 }
