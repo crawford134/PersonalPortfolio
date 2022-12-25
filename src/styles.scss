@@ -243,13 +243,73 @@
 /*---------------------------- Light/Dark Mode Component ----------------------------*/
 
 .mode-container{
+  width: 120px;
+  height: 60px;
   position: fixed;
-  z-index: 21;
+  z-index: 19;
+  bottom: 5%;
+  right: 2%;
+  
+  
   &-icon{
 
     svg{
+      color: var(--selected-theme-main-color-light);
+      margin: 0px 35px;
       height: 40px !important;
       width: 40px !important;
     }
+    .bounce{
+      animation-name: bounce; 
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
   }
+
+  .mode-container-tooltip{
+    &:hover{
+      .mode-container-tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    .mode-container-tooltiptext{
+      visibility: hidden;
+      width: 120px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -60px;
+      opacity: 0;
+      transition: opacity 0.3s;
+
+      &::after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+    }
+  }
+}
+@keyframes bounce {
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.25);
+    }
+    100%{
+      transform: scale(1);
+    }
 }

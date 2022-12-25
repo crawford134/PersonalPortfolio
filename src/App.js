@@ -10,7 +10,7 @@ import Contact from "./Pages/Contact";
 import Mode from "./Components/Mode";
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
-import { options } from "./Helpers/ParticlesConfig1";
+import { options } from "./Helpers/ParticlesConfig";
 
 function App() {
   const particlesInit = async (main) =>{

@@ -26,18 +26,34 @@ const colorArray = [
 ];
 
 export default function Mode() {
-  //   const date = new Date();
-  //   const currentTime = date.getHours() + ":" + date.getMinutes();
-  //   console.log(currentTime)
-  const [mode, setMode] = useState(false);
+  const [mode, setMode] = useState(true); //true Is Light Mode, False is Dark Mode
   const handleClick = () => {
     setMode(!mode);
   };
+
   return (
     <div className="mode-container">
-      <div className="mode-container-icon" onClick={handleClick}>
-        {mode ? <WbSunnyIcon /> : <DarkModeIcon />}
-      </div>
+      {mode ? (
+        <div class="mode-container-tooltip">
+          <div
+            className="mode-container-icon"
+            onClick={handleClick}
+          >
+            <WbSunnyIcon className="bounce" />
+            <span className="mode-container-tooltiptext">{`Click Me to Switch to ${mode ? `Light` : `Dark`} Mode`}</span>
+          </div>
+        </div>
+      ) : (
+        <div class="mode-container-tooltip">
+          <div
+            className="mode-container-icon"
+            onClick={handleClick}
+          >
+            <DarkModeIcon className="bounce" />
+            <span className="mode-container-tooltiptext">{`Click Me to Switch to ${mode ? `Light` : `Dark`} Mode`}</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
