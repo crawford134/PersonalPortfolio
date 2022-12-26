@@ -28,7 +28,7 @@ export default function Mode({onChange, theme, toggle, background}) {
             onClick={handleChange}
           >
             <WbSunnyIcon className="bounce" />
-            <span className="mode-container-tooltiptext">Click Me to Switch<br />to Dark Mode</span>
+            <span className="mode-container-tooltiptext">Click Me for<br />Dark Mode</span>
           </div>
         </div>
       ) : (
@@ -38,29 +38,29 @@ export default function Mode({onChange, theme, toggle, background}) {
             onClick={handleChange}
           >
             <DarkModeIcon className="bounce" />
-            <span className="mode-container-tooltiptext">Click Me to Switch<br />to Light Mode</span>
+            <span className="mode-container-tooltiptext">Click Me for<br />Light Mode</span>
           </div>
         </div>
       )}
       { location.pathname === "/" ? (
         background===0? (
-          <div class="mode-container-tooltip extra-padding">
+          <div class="mode-container-tooltip2 extra-padding">
             <div
               className="mode-container-icon"
               onClick={toggleNext}
             >
               <LooksOneIcon />
-              <span className="mode-container-tooltiptext">Click Me for<br/>Background 2</span>
+              <span className="mode-container-tooltiptext2">Click Me for<br/>Background 2</span>
             </div>
           </div>
         ) : (
-          <div class="mode-container-tooltip extra-padding">
+          <div class="mode-container-tooltip2 extra-padding">
             <div
               className="mode-container-icon"
               onClick={toggleNext}
             >
               <LooksTwoIcon />
-              <span className="mode-container-tooltiptext">Click Me for<br/>Background 1</span>
+              <span className="mode-container-tooltiptext2">Click Me for<br/>Background 1</span>
             </div>
           </div>
         )
