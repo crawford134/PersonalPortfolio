@@ -25,8 +25,8 @@ export default function Home() {
       >
         <div className="contactme">
           <div className="contactme-buttons">
-            <button>Hire Me</button>
-            <a>Download Resume</a>
+            <button onClick={"window.location='https://www.linkedin.com/in/kiley-carson/';"}>Hire Me</button>
+            <a href="https://kileycarson.ca/KileyCarsonResume.pdf">Download Resume</a>
           </div>
 
           <div className="contactme-social">
