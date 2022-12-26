@@ -1,39 +1,25 @@
-export const options = {
-    "background": {
-        "image": "",
-        "position": "50% 50%",
-        "repeat": "no-repeat",
-        "size": "cover"
-    },
+//Snow
+export const optionsLightSnow = {
     "fullScreen": {
         "enable": true,
         "zIndex": 1
     },
     "particles": {
         "number": {
-            "value": 150,
+            "value": 400,
             "density": {
                 "enable": true
             }
         },
         "color": {
-            "value": "#ffffff"
-        },
-        "shadow": {
-            "enable": true,
-            "color": "#000000",
-            "blur": 5,
-            "offset": {
-                "x": 3,
-                "y": 3
-            }
+            "value": "#81c4e8"
         },
         "shape": {
             "type": "circle"
         },
         "opacity": {
             "value": 0.5,
-            "random": false,
+            "random": true,
             "anim": {
                 "enable": false,
                 "speed": 1,
@@ -42,7 +28,7 @@ export const options = {
             }
         },
         "size": {
-            "value": 5,
+            "value": 10,
             "random": true,
             "anim": {
                 "enable": false,
@@ -52,21 +38,16 @@ export const options = {
             }
         },
         "line_linked": {
-            "enable": true,
-            "distance": 150,
+            "enable": false,
+            "distance": 500,
             "color": "#ffffff",
             "opacity": 0.4,
-            "width": 1,
-            "shadow": {
-                "enable": true,
-                "blur": 5,
-                "color": "#000000"
-            }
+            "width": 2
         },
         "move": {
             "enable": true,
             "speed": 2,
-            "direction": "none",
+            "direction": "bottom",
             "random": false,
             "straight": false,
             "out_mode": "out",
@@ -81,16 +62,11 @@ export const options = {
         "events": {
             "onhover": {
                 "enable": true,
-                "mode": "repulse",
-                "parallax": {
-                    "enable": false,
-                    "force": 60,
-                    "smooth": 10
-                }
+                "mode": "bubble"
             },
             "onclick": {
                 "enable": true,
-                "mode": "push"
+                "mode": "repulse"
             },
             "resize": true
         },
@@ -98,14 +74,14 @@ export const options = {
             "grab": {
                 "distance": 400,
                 "line_linked": {
-                    "opacity": 1
+                    "opacity": 0.5
                 }
             },
             "bubble": {
                 "distance": 400,
-                "size": 40,
-                "duration": 2,
-                "opacity": 0.8,
+                "size": 4,
+                "duration": 0.3,
+                "opacity": 1,
                 "speed": 3
             },
             "repulse": {
@@ -119,6 +95,12 @@ export const options = {
             }
         }
     },
-    "fpsLimit": 120,
-    "retina_detect": true
+    "retina_detect": true,
+    "background": {
+        "color": "#e6f3fa",
+        "image": "",
+        "position": "50% 50%",
+        "repeat": "no-repeat",
+        "size": "cover"
+    }
 }

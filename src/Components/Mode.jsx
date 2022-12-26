@@ -1,43 +1,71 @@
-import { React, useState } from "react";
+import { React } from "react";
+import { useLocation } from "react-router-dom";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
+import LooksOneIcon from '@mui/icons-material/LooksOne';
+import LooksTwoIcon from '@mui/icons-material/LooksTwo';
 
-const colorArray = [
-  {
-    id: "darkMode",
-    background: "",
-    dark: "",
-    normal: "",
-    light: "",
-    subText: "",
-    header: "",
-    headerBoarder: "",
-  },
-  {
-    id: "lightMode",
-    background: "",
-    dark: "",
-    normal: "",
-    light: "",
-    subText: "",
-    header: "",
-    headerBoarder: "",
-  },
-];
+export default function Mode({onChange, theme, toggle, background}) {
+  const location = useLocation();
 
-export default function Mode() {
-  //   const date = new Date();
-  //   const currentTime = date.getHours() + ":" + date.getMinutes();
-  //   console.log(currentTime)
-  const [mode, setMode] = useState(false);
-  const handleClick = () => {
-    setMode(!mode);
-  };
+  function handleChange(){
+    onChange()
+  }
+  function toggleNext(){
+    console.log("Before: ",background)
+    toggle()
+    console.log("After: ",background)
+  }
+
+
+
   return (
     <div className="mode-container">
-      <div className="mode-container-icon" onClick={handleClick}>
-        {mode ? <WbSunnyIcon /> : <DarkModeIcon />}
-      </div>
+      {theme ? (
+        <div class="mode-container-tooltip">
+          <div
+            className="mode-container-icon"
+            onClick={handleChange}
+          >
+            <WbSunnyIcon className="bounce" />
+            <span className="mode-container-tooltiptext">Click Me to Switch<br />to Dark Mode</span>
+          </div>
+        </div>
+      ) : (
+        <div class="mode-container-tooltip">
+          <div
+            className="mode-container-icon"
+            onClick={handleChange}
+          >
+            <DarkModeIcon className="bounce" />
+            <span className="mode-container-tooltiptext">Click Me to Switch<br />to Light Mode</span>
+          </div>
+        </div>
+      )}
+      { location.pathname === "/" ? (
+        background===0? (
+          <div class="mode-container-tooltip extra-padding">
+            <div
+              className="mode-container-icon"
+              onClick={toggleNext}
+            >
+              <LooksOneIcon />
+              <span className="mode-container-tooltiptext">Click Me for<br/>Background 2</span>
+            </div>
+          </div>
+        ) : (
+          <div class="mode-container-tooltip extra-padding">
+            <div
+              className="mode-container-icon"
+              onClick={toggleNext}
+            >
+              <LooksTwoIcon />
+              <span className="mode-container-tooltiptext">Click Me for<br/>Background 1</span>
+            </div>
+          </div>
+        )
+      ) : ( "" )
+    }
     </div>
   );
 }
