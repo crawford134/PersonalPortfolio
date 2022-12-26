@@ -65,7 +65,7 @@
         font-weight: 500;
         &:hover{
           background-color: var(--selected-theme-main-color-light);
-          color: var(--selected-theme-sub-text-color);
+          color: var(--selected-theme-sub-text-color1);
         }
       }
     }
@@ -243,19 +243,17 @@
 /*---------------------------- Light/Dark Mode Component ----------------------------*/
 
 .mode-container{
-  width: 120px;
-  height: 60px;
   position: fixed;
   z-index: 19;
-  bottom: 5%;
-  right: 2%;
-  
+  bottom: 0.1%;
+  right: 0.1%;
   
   &-icon{
 
     svg{
       color: var(--selected-theme-main-color-light);
-      margin: 0px 35px;
+      margin: 0px; 
+      margin-left: 35px;
       height: 40px !important;
       width: 40px !important;
     }
@@ -300,6 +298,24 @@
         border-color: #555 transparent transparent transparent;
       }
     }
+  }
+}
+@media screen and (max-width: 360px){
+  .mode-container{
+    width: 80px;
+    height: 44px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 700px){
+  .mode-container{
+    width: 100px;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 700px){
+  .mode-container{
+    width: 122px;
+    height: 77px;
   }
 }
 @keyframes bounce {

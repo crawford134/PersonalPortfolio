@@ -1,4 +1,5 @@
-export const options = {
+//Snow
+export const optionsLightSnow = {
     "background": {
         "image": "",
         "position": "50% 50%",

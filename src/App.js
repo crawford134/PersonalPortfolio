@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./Components/Header";
 import Home from "./Pages/Home";
@@ -10,7 +10,11 @@ import Contact from "./Pages/Contact";
 import Mode from "./Components/Mode";
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
-import { options } from "./Helpers/ParticlesConfig-dark";
+import { optionsDarkShadow } from "./Helpers/ParticlesConfig-dark";
+import { optionsLightShadow } from "./Helpers/ParticlesConfig-light";
+import { optionsDarkSnow } from "./Helpers/ParticlesConfig-dark";
+import { optionsLightSnow } from "./Helpers/ParticlesConfig-light";
+import { changeTheme } from "./Helpers/ChangeTheme"
 
 function App() {
   const particlesInit = async (main) =>{
@@ -18,16 +22,25 @@ function App() {
   }
   const location = useLocation();
 
+  const [theme, setTheme] = useState();
+  const handleClick = () => {
+    setTheme(!theme)
+    changeTheme(theme)
+  }
+
   return (
     <div className="app">
       <React.Fragment>
       {
-        location.pathname==="/" ?  <Particles id="tsparticles" init={particlesInit} options = {options}  />
+        location.pathname==="/" ?  
+          theme ? 
+            <Particles id="tsparticles" init={particlesInit} options = {optionsLightShadow} /> :
+            <Particles id="tsparticles" init={particlesInit} options = {optionsDarkShadow} /> 
         : ""
       }
       <header className="app-header"><Header /></header>
       <main className="app-main">
-        <Mode/>
+        <Mode onChange={handleClick} theme={theme}/>
         <Routes>
           <Route path="/" index element={<Home />} />
           <Route path="/about" element={<AboutMe />} exact/>
