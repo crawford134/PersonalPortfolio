@@ -25,13 +25,13 @@ export default function Home() {
       >
         <div className="contactme">
           <div className="contactme-buttons">
-            <button onClick={"window.location='https://www.linkedin.com/in/kiley-carson/';"}>Hire Me</button>
+            <button>Hire Me</button>
             <a href="https://kileycarson.ca/KileyCarsonResume.pdf">Download Resume</a>
           </div>
 
           <div className="contactme-social">
-            <LinkedInIcon />
-            <GitHubIcon />
+            <a href="https://www.linkedin.com/in/kiley-carson/"><LinkedInIcon /></a>
+            <a href="https://github.com/crawford134"><GitHubIcon /></a>
           </div>
         </div>
       </Animate>
