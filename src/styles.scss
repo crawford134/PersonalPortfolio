@@ -281,9 +281,45 @@
       padding: 5px 0;
       position: absolute;
       z-index: 1;
-      bottom: 125%;
+      bottom: 100%;
       left: 50%;
-      margin-left: -60px;
+      margin-left: -47px;
+      opacity: 0;
+      transition: opacity 0.3s;
+
+      &::after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+    }
+  }
+
+  .mode-container-tooltip2{
+    &:hover{
+      .mode-container-tooltiptext2 {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    .mode-container-tooltiptext2 {
+      visibility: hidden;
+      width: 120px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 45%;
+      left: 50%;
+      margin-left: -47px;
       opacity: 0;
       transition: opacity 0.3s;
 
@@ -301,24 +337,27 @@
   }
 }
 .extra-padding{
-  padding-top: 10px;
+  padding-top: 25px;
 }
 @media screen and (max-width: 360px){
   .mode-container{
     width: 77px;
-    height: 82px;
+    height: 100px;
+  }
+  .extra-padding{
+    padding-top: 15px;
   }
 }
 @media screen and (min-width: 360px) and (max-width: 700px){
   .mode-container{
     width: 80px;
-    height: 80px;
+    height: 110px;
   }
 }
 @media screen and (min-width: 700px){
   .mode-container{
     width: 85px;
-    height: 92px;
+    height: 115px;
   }
 }
 @keyframes bounce {
