@@ -8,7 +8,7 @@ export default function Home() {
     <section className="home" id="home">
       <div className="home-text">
         <h1>
-          Hello, I'm Kiley. <br />
+          Hello, I'm Kiley <br />
           IAM Security Developer
         </h1>
       </div>
