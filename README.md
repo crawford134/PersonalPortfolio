@@ -1,47 +1,70 @@
-# Kiley Carson's Personal Portfolio
+# Getting Started with Create React App
 
-## To Start the Frontend
-```
-npm run start
-```
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## To Deploy
-```
-npm run deploy
-```
+## Available Scripts
 
-## Imports 
+In the project directory, you can run:
 
-**React Router Dom:** 
-`npm install --save react-router-dom`
+### `npm start`
 
-**SASS:** 
-`npm install sass`
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-**React Vertical Timeline Component:** 
-`npm install react-vertical-timeline-component`
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-**React Progress Bar:** 
-`npm install rc-progress`
+### `npm test`
 
-**React tsParticles:** 
-`npm install react-tsparticles tsparticles`
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-**React Animation:** 
-`npm install react-simple-animate`
+### `npm run build`
 
-**Material UI Icons:**
-`npm install @mui/icons-material` or react icons `npm install react-icons`
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-**Github Pages:** 
-`npm install gh-pages --save-dev`
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Particles Set Up 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-In the Helpers Folder you can find 2 different ParticlesConfig.js files with json objects that can be used for the Home Page Background.
-To change the config file being used go to the App.js file 
-To see the demos go to:
-`https://particles.js.org/samples/index.html#shadow`
+### `npm run eject`
 
-If you want to use a particles demo that is not found here, go to 
-`https://github.com/matteobruni/tsparticles/tree/main/websites/particles.js.org/presets`
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
