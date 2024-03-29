@@ -6,5 +6,6 @@ To Deploy
 To Setup a custom domain name 
 
 1. Go to the github pages section in the domain & add custom domain 
-2. update the package.json file to have the url in it 
-3. create a cname file add the url to it 
+2. Go to GoDaddy & update the domain to be the github custom url 
+3. update the package.json file to have the url in it 
+4. create a cname file add the url to it 
