@@ -29,7 +29,7 @@ class Contact extends Component {
           </div>
         </Fade>
 
-        <div className="row">
+        {/* <div className="row">
           <Slide right duration={1000}>
             <aside className="footer-widgets">
               <div className="widget widget_contact">
@@ -45,7 +45,7 @@ class Contact extends Component {
               </div>
             </aside>
           </Slide>
-        </div>
+        </div> */}
       </section>
     );
   }
