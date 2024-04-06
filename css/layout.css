@@ -115,7 +115,7 @@ header .scrolldown a:hover { color: #0762f9; }
    left: 0;
    top: 0;
 }
-.opaque { background-color: #333; }
+.opaque { background-color: #a3a3a3; }
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
@@ -154,7 +154,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #fe6928; }
+ul#nav li.current a { color: #34495e; }
 
 
 /* ------------------------------------------------------------------ */
@@ -162,14 +162,14 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #000524;
+   background: #34495e;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
 }
 
 #about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #0762f9; }
+#about a:hover, #about a:focus { color: #34495e; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
@@ -179,6 +179,12 @@ ul#nav li.current a { color: #fe6928; }
 #about p {
    line-height: 30px;
    color: #ccc;
+}
+#about .resume-text {
+   color: #ccc;
+   font-size: 10px;
+   line-height: 12px;
+   font-style: italic;
 }
 #about .profile-pic {
    position: relative;
@@ -210,55 +216,155 @@ ul#nav li.current a { color: #fe6928; }
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
 
-#resume {
+#experience {
    background: #fff;
-   padding-top: 90px;
-   padding-bottom: 72px;
+   padding-top: 70px;
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #0762f9; }
-#resume a:hover, #resume a:focus { color: #313131; }
+#education {
+   padding-top: 70px;
+   background: #fff;
+   overflow: hidden;
+}
 
-#resume h1 {
+#experience a, #experience a:visited  { color: #0762f9; }
+#education a, #education a:visited  { color: #0762f9; }
+#experience a:hover, #experience a:focus { color: #313131; }
+#education a:hover, #education a:focus { color: #313131; }
+
+#experience h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#resume h1 span {
+#education h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#experience h1 span {
    border-bottom: 3px solid #0762f9;
    padding-bottom: 6px;
 }
-#resume h3 {
+#education h1 span {
+   border-bottom: 3px solid #0762f9;
+   padding-bottom: 6px;
+}
+#experience h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+#education h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
+#experience .header-col { padding-top: 9px; }
+#experience .main-col { padding-right: 10%; }
+#education .header-col { padding-top: 9px; }
+#education .main-col { padding-right: 10%; }
 
 .education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
-#resume .info {
+
+#experience .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
 }
-#resume .info span {
+#experience .info span {
    margin-right: 5px;
    margin-left: 5px;
 }
-#resume .date {
+#experience .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+#education .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#education .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#education .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
 
 /*----------------------------------------------*/
-/*	Skill Bars
+/*	Skills
 /*----------------------------------------------*/
+
+
+#skills {
+   padding-top: 48px;
+   background: #fff;
+   overflow: hidden;
+}
+
+#skills a, #experience a:visited  { color: #0762f9; }
+#skills a:hover, #education a:focus { color: #313131; }
+
+#skills h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+#skills h1 span {
+   border-bottom: 3px solid #0762f9;
+   padding-bottom: 6px;
+}
+
+#skills h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#skills .header-col { padding-top: 9px; }
+#skills .main-col { padding-right: 10%; }
+
+.education, .work {
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 1px solid #E8E8E8;
+}
+
+#experience .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#experience .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#experience .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+#education .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#education .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#education .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+
 
 .bars {
 	width: 95%;
