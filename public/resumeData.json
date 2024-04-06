@@ -78,27 +78,27 @@
       "skills":[
         {
           "name":"Java",
-          "level":"1%"
+          "level":"80%"
         },
         {
           "name":"Reactjs",
-          "level":"1%"
+          "level":"75%"
         },
         {
           "name":"Nodejs",
-          "level":"1%"
-        },
-        {
-          "name":"Python",
-          "level":"1%"
+          "level":"75%"
         },
         {
           "name":"CSS",
-          "level":"1%"
+          "level":"80%"
         },
         {
           "name":"Cyber Security",
-          "level":"1%"
+          "level":"77%"
+        },
+        {
+          "name":"Python",
+          "level":"60%"
         }
       ]
     }
