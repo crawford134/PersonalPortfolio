@@ -5,13 +5,16 @@
       "description2":"Identity and Access Management",
       "image":"profilepic.jpeg",
       "contactmessage":"If anything on my resume interested you, please feel free to contact me via email or LinkedIn.",
-      "bio":"My name is Kiley. I'm a versatile Full-Stack Developer with +6 years of experience in Java programming and +10 years of work experience in multiple industries. I have expertise in planning and executing technical and non-technical events and have experience cultivating collaborative and supportive environments for learning and teamwork throughout many positions.",
+      "bio1":"Kiley Carson is a results-driven professional known for her dedication, perseverance, and self-described status as an eternal learner. With a Bachelor of Science in Computer Science from the University of Calgary and a perfect GPA of 4.0 from the Yale School of Management's Women’s Leadership Program, Kiley possesses a diverse skill set and a passion for technology and leadership. Currently serving as an Identity Development Manager at ATB Financial, she excels in collaborating with cross-functional teams to implement secure identity and access management solutions.",
+      "bio2":"Throughout her career, Kiley has showcased her resilience in overcoming challenges and fostering inclusive work environments. Her roles at ATB Financial, including CIAM Security Developer and Apigee Full-Stack Developer, underscore her critical . As a co-organizer of the Google Developer Group (GDG) Calgary Cloud and founder of the University of Calgary Developer Student Club, she advocates for empowering women and underrepresented groups in technology.",
+      "bio3":"Recipient of esteemed scholarships and awards such as the Lockhart Family Scholarship for Computer Science and the Women Techmakers Scholars Program Award, Kiley remains steadfast in her pursuit of excellence. With an unwavering focus on tangible results and a lifelong commitment to learning, Kiley Carson endeavors to be a trailblazer in technology and leadership.",
       "github":"https://github.com/crawford134",
       "project":"https://www.linkedin.com/in/kiley-carson/",
       "address":{
         "city":"Calgary",
         "state":"Alberta"
       },
+      "resumeRequest":"Please reach out directly to receive the code for the resume.",
       "resumedownload":"/KileyCarson.pdf",
       "social":[
         {
