@@ -116,7 +116,7 @@
 	   width: 48px;
 		height: 48px;
 		text-align: left;
-		background-color: #CC5200;
+		background-color: #0762f9;
 		position: relative;
       border: none;
       float: right;
@@ -164,7 +164,7 @@
 	#nav-wrap:target > ul#nav	{
 	   display: block;
       padding: 30px 20px 48px 20px;
-      background: #1f2024;
+      background: #a3a3a3;
       margin: 0 30px;
       clear: both;
    }

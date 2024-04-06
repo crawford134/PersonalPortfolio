@@ -115,7 +115,7 @@ header .scrolldown a:hover { color: #0762f9; }
    left: 0;
    top: 0;
 }
-.opaque { background-color: #333; }
+.opaque { background-color: #a3a3a3; }
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
@@ -154,7 +154,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #fe6928; }
+ul#nav li.current a { color: #34495e; }
 
 
 /* ------------------------------------------------------------------ */
@@ -162,14 +162,14 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #000524;
+   background: #34495e;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
 }
 
 #about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #0762f9; }
+#about a:hover, #about a:focus { color: #34495e; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
