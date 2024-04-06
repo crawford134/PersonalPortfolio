@@ -7,12 +7,12 @@ class About extends Component {
 
     const name = this.props.data.name;
     const profilepic = "images/" + this.props.data.image;
-    const bio = this.props.data.bio;
-    const street = this.props.data.address.street;
+    const bio1 = this.props.data.bio1;
+    const bio2 = this.props.data.bio2;
+    const bio3 = this.props.data.bio3;
     const city = this.props.data.address.city;
     const state = this.props.data.address.state;
-    const phone = this.props.data.phone;
-    const email = this.props.data.email;
+    const resumeRequest = this.props.data.resumeRequest;
     const resumeDownload = this.props.data.resumedownload;
 
     return (
@@ -25,31 +25,32 @@ class About extends Component {
                 src={profilepic}
                 alt="Kiley Carson Profile Pic"
               />
-            </div>
-            <div className="nine columns main-col">
-              <h2>Hello There!</h2>
-
-              <p>{bio}</p>
-              <div className="row">
-                <div className="columns contact-details">
-                  <h2>Contact Details</h2>
+              <h2>Contact Details</h2>
                   <p className="address">
                     <span>{name}</span>
                     <br />
                     <span>
                       {city}, {state}
                     </span>
-                    <br />
-                    <span>{phone}</span>
-                    <br />
-                    <span>{email}</span>
-                  </p>
+                </p>
+              <a href={resumeDownload} className="button" download={true}>
+                    <i className="fa fa-download"></i>   Download resume
+              </a>
+              <p className="resume-text">{resumeRequest}</p>
+            </div>
+            <div className="nine columns main-col">
+              <h2>About Me</h2>
+
+              <p>{bio1}</p>
+              <p>{bio2}</p>
+              <p>{bio3}</p>
+              <div className="row">
+                <div className="columns contact-details">
+                  
                 </div>
                 <div className="columns download">
                   <p>
-                    <a href={resumeDownload} className="button" download={true}>
-                      <i className="fa fa-download"></i><a>Download Resume</a>
-                    </a>
+                    
                   </p>
                 </div>
               </div>
