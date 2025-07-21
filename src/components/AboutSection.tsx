@@ -10,7 +10,7 @@ const AboutSection = () => {
     },
     {
       icon: Users,
-      title: "Influence Without Authority",
+      title: "Collaborative Approach",
       description: "Building consensus and driving change across organizations through collaboration"
     },
     {
