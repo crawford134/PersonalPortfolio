@@ -29,8 +29,8 @@ const Hero = () => (
             <div className="flex-1">
               <p className="text-lg text-foreground leading-relaxed">
                 Cybersecurity leader specializing in identity, application security,
-                and influence without authority. Driving security outcomes that align
-                with business value, not just technical control.
+                and a cross-team collaborative approach. Driving security outcomes that 
+                align with business value, not just technical control.
               </p>
             </div>
           </div>
