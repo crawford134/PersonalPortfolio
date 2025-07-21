@@ -1,7 +1,7 @@
 To Deploy 
 
 1. Merge the code onto the main branch 
-2. npm run deploy 
+2. npm run deploy (this can be done without being merged)
 
 To Setup a custom domain name 
 
