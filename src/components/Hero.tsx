@@ -3,7 +3,7 @@ import heroBackground from '@/assets/security-hero-bg.jpg';
 import profilePhoto from '@/assets/profile-photo.jpg';
 
 const Hero = () => (
-  <section className="relative min-h-screen bg-background">
+  <section id="home" className="relative min-h-screen bg-background">
     {/* Background Image */}
     <div
       className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15"

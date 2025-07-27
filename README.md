@@ -1,7 +1,8 @@
 To Deploy 
 
-1. Merge the code onto the main branch 
-2. npm run deploy (this can be done without being merged)
+1. npm run build (creates the dist folder with the content to deploy)
+2. Merge the code onto the main branch 
+3. npm run deploy (this can be done without being merged)
 
 To Setup a custom domain name 
 
